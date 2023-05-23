@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Matrial icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+    <!-- css file  -->
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <title>Dashboard </title>
+</head>
+<body>
+   <div class="container">
+    <!--SIDBAR Left side  -->
+    <aside>
+        <!-- loog  -->
+        <div class="top">
+            <div class="logo">
+                <img src="/images/Logo__1_-removebg-preview.png" alt="logo">
+                <h2>Test <span class="danger">Board</span></h2>
+            </div>
+            <div class="close" id="close-btn">
+                <span class="material-icons-sharp"> close </span>
+            </div>
+        </div>
+        <!-- content  -->
+        <div class="sidebar">
+            <a href="#" class="active"> 
+                <span class="material-icons-sharp">dashboard </span>
+                <h3> Dashboard</h3>
+            </a>
+            <a href="#"> 
+                <span class="material-icons-sharp">person_outline </span>
+                <h3> Customers</h3>
+            </a>
+            <a href=""> 
+                <span class="material-icons-sharp">receipt_long </span>
+                <h3> Orders</h3>
+            </a>
+            <a href="" > 
+                <span class="material-icons-sharp">analytics </span>
+                <h3> Analytics</h3>
+            </a>
+            <a href="" > 
+                <span class="material-icons-sharp">message </span>
+                <h3> Message</h3>
+                <span class="message-count">25</span>
+            </a>
+            <a href=""> 
+                <span class="material-icons-sharp">inventory </span>
+                <h3> Prouducts</h3>
+            </a>
+            <a href=""> 
+                <span class="material-icons-sharp">report_gmailerrorred </span>
+                <h3> Reports</h3>
+            </a>
+            <a href=""> 
+                <span class="material-icons-sharp">settings </span>
+                <h3> Setings</h3>
+            </a>
+            <a href=""> 
+                <span class="material-icons-sharp">add </span>
+                <h3> Add Prouducts</h3>
+            </a>
+            <a href=""> 
+                <span class="material-icons-sharp">logout </span>
+                <h3> Log out</h3>
+            </a>
+        </div>
+    </aside>
+    <!--MAINBAR  -->
+    <main>
+        <h1>Dashboard</h1>
+        <div class="data">
+            <input type="date" >
+        </div>
+
+        <!--MAINBAR TOP  -->
+        <div class="middel">
+            <!-- proress 1 -->
+            <div class="box sales ">
+                <span class="material-icons-sharp">query_stats</span>
+                <div class="mid-contnt">
+                    <div class="left">   
+                        <h3>Total Sales</h3>
+                        <h1>$89.023</h1>
+                    </div>
+                    <div class="proress">
+                        <svg> 
+                            <circle cx="38" cy="38" r="36" ></circle>
+                        </svg>
+                        <div class="number"><p>81%</p></div>
+                    </div>
+                </div>
+                <small class="text-muted"> Total 24 Hours</small>
+            </div>    
+            <!-- proress 2 -->
+            <div class="box expenses">
+                <span class="material-icons-sharp"> insights </span>
+                <div class="mid-contnt">
+                    <div class="left">   
+                        <h3>Total Expenses</h3>
+                        <h1>$60.053</h1>
+                    </div>
+                    <div class="proress">
+                        <svg> 
+                            <circle cx="38" cy="38" r="36" ></circle>
+                        </svg>
+                        <div class="number"><p>62%</p></div>
+                    </div>
+                </div>
+                <small class="text-muted"> Total 24 Hours</small>
+            </div>                
+            <!-- proress 3 -->
+            <div class="box income">
+                <span class="material-icons-sharp">  legend_toggle</span>
+                <div class="mid-contnt">
+                    <div class="left">   
+                        <h3>Total Income</h3>
+                        <h1>$25.023</h1>
+                    </div>
+                    <div class="proress">
+                        <svg> 
+                            <circle cx="38" cy="38" r="36" ></circle>
+                        </svg>
+                        <div class="number"><p>30%</p></div>
+                    </div>
+                </div>
+                <small class="text-muted"> Total 24 Hours</small>
+            </div>               
+        </div>
+
+        <!--MAINBAR BOTTOM (Recent Order) -->
+        <div class="recent-order">
+            <h2>Recent Order</h2>
+            <table>
+                <thead >
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Product Number</th>
+                        <th>Payment</th>
+                        <th>status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <!-- <tr>
+                        <td> Vetasress</td>
+                        <td> 191889</td>
+                        <td> Done</td>
+                        <td class="warning"> Pending</td>
+                        <td class="primary"> Details</td>
+                    </tr>
+                    <tr>
+                        <td> Vetasress</td>
+                        <td> 191889</td>
+                        <td> Done</td>
+                        <td class="warning"> Pending</td>
+                        <td class="primary"> Details</td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <a href="#">Show All</a>
+        </div>
+    </main>
+    <!--SIDBAR Right side  -->
+    <div class="right">
+        <!-- top area (profile) -->
+        <div class="top">
+            <button id="menu-btn">
+                <span class="material-icons-sharp"> menu </span>
+            </button>
+            <div class="theme-toggler">
+                <span class="material-icons-sharp active ">wb_sunny</span>
+                <span class="material-icons-sharp"> nightlight</span>
+            </div>
+            <div class="profile">
+                <div class="info">
+                    <p>Hi , There </p>
+                    <small class="text-muted"> Admin</small>
+                </div>
+                <div class="profile-pho">
+                    <img src="/images/7.png" alt="photo">
+                </div>
+            </div>
+        </div>
+        <!-- middle area (recent-updates)  -->
+        <div class="recent-updates">
+            <h2>Recent Updates</h2>
+            <div class="updates">
+
+                <div class="update">
+
+                    <div class="profile-pho">
+                        <img src="/images/132.png" alt="photo">
+                    </div>
+
+                    <div class="update-info">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur</p>
+                        <small class="text-muted"> 2 Minutes</small>
+                    </div>
+
+                </div>
+
+                <div class="update">
+
+                    <div class="profile-pho">
+                        <img src="/images/110.png" alt="photo">
+                    </div>
+
+                    <div class="update-info">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur</p>
+                        <small class="text-muted"> 2 Minutes</small>
+                    </div>
+                    
+                </div>
+
+                <div class="update">
+
+                    <div class="profile-pho">
+                        <img src="/images/104.png" alt="photo">
+                    </div>
+
+                    <div class="update-info">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur</p>
+                        <small class="text-muted"> 2 Minutes</small>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+        <!-- bottom area ( Sales Analytics) -->
+        <div class="sales-analytics">
+            <h2>Sales Analytics</h2>
+            <!--online  -->
+            <div class="item online">
+                <div class="box-item">
+                    <div class="icon">
+                        <span class="material-icons-sharp"> shopping_cart </span>
+                    </div>
+                    <div class="item-info">
+                        <h3> Online Order</h3>
+                        <small class="text-muted"> Last 24 Hourse</small>
+                    </div>
+                    <h5 class="success">+45%</h5>
+                    <h3>3565</h3>
+                </div>
+            </div>
+            <!--offline  -->
+            <div class="item offline">
+                <div class="box-item">
+                    <div class="icon">
+                        <span class="material-icons-sharp"> local_mall </span>
+                    </div>
+                    <div class="item-info">
+                        <h3> Offline Order</h3>
+                        <small class="text-muted"> Last 24 Hourse</small>
+                    </div>
+                    <h5 class="danger">-17%</h5>
+                    <h3>3565</h3>
+                </div>
+            </div>
+            <!-- customers -->
+            <div class="item customers">
+                <div class="box-item">
+                    <div class="icon">
+                        <span class="material-icons-sharp"> person </span>
+                    </div>
+                    <div class="item-info">
+                        <h3> New customers</h3>
+                        <small class="text-muted"> Last 24 Hourse</small>
+                    </div>
+                    <h5 class="success">+5%</h5>
+                    <h3>120</h3>
+                </div>
+            </div>
+            <!-- Add Products -->
+            <div class="item add-proudact">
+                <span class="material-icons-sharp"> add </span>
+                <h3>Add Products</h3>    
+            </div>
+        </div>
+    </aside>
+   </div>
+   <script src="javascript/data.js"></script>
+    <script src="javascript/script.js"></script>
+   
+</body>
+</html>     
